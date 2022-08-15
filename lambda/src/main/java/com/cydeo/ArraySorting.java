@@ -13,6 +13,11 @@ public class ArraySorting { // QuickSort, BubbleSort
         as.sort(bs);
 
 
+        Sorting quickSort = ()-> System.out.println("Quick Sorting");
+        as.sort(quickSort);
+
+        as.sort(()-> System.out.println("Quick Sorting"));
+
 
 
 
