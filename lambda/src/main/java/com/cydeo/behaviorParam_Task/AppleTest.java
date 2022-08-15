@@ -1,5 +1,7 @@
 package com.cydeo.behaviorParam_Task;
 
+import com.cydeo.Sorting;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,6 +21,9 @@ public class AppleTest {
 
         List<Apple> greenApple = filterApples(inventory, new AppleGreenColorPredicate());
         System.out.println(greenApple);
+
+        ApplePredicate weightApple = (Apple apple)->apple.getWeight()>200; //apple->apple.getWeight()>200;
+        filterApples(inventory,weightApple);
 
 
 
