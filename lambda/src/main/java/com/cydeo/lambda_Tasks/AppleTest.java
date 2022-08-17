@@ -1,6 +1,4 @@
-package com.cydeo.behaviorParam_Task;
-
-import com.cydeo.Sorting;
+package com.cydeo.lambda_Tasks;
 
 import java.util.ArrayList;
 import java.util.List;

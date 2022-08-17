@@ -1,4 +1,4 @@
-package com.cydeo.behaviorParam_Task;
+package com.cydeo.lambda_Tasks;
 
 public class AppleHeavyPredicate implements ApplePredicate{
 
