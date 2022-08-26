@@ -1,9 +1,11 @@
 package com.cydeo.java14;
 
+import java.util.Scanner;
+
 public class SwitchCaseDemo {
     public static void main(String[] args) {
 
-        var month = 4;
+        var month = 2;
         switch (month) {
             case 1:
             case 3:
@@ -43,6 +45,25 @@ public class SwitchCaseDemo {
             default -> 0;
         };
         System.out.println(day1);
+
+        System.out.println("======================");
+
+        int day2 = switch(month){
+            case 1,3,5,7,8,10,12 -> 31;
+            case 4,6,9 -> 30;
+            case 2 -> {
+                Scanner scanner = new Scanner(System.in);
+                System.out.println("Enter year: ");
+                int year = scanner.nextInt();
+                if(year %4==0)
+                    yield 29;
+                else
+                    yield 28;
+            }
+            default -> 0;
+        };
+
+        System.out.println(day2);
 
 
     }
